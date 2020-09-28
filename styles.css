@@ -4,6 +4,8 @@ body {
   font-family: Lato, sans-serif;
 }
 
+/* The nav section */
+
 .nav {
   display: flex;
   width: 100%;
@@ -28,8 +30,43 @@ body {
 
 .nav-buttons a {
   text-decoration: none;
+  color: #000;
   font-size: 15px;
   display: inline-block; /* so that we can add margin && padding */
   padding: 5px;
   margin: 0 5px;
+}
+
+/* The main section */
+
+.main {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.left-column,
+.center-column,
+.right-column {
+  flex: 1 1 30%;
+  padding: 0 20px;
+  border: 1px solid green;
+}
+
+.center-column {
+  flex-basis: 50%; /* overriting flex-basis*/
+  flex-shrink: 0; /* overriting flex-shrink*/
+}
+
+/* The footer section */
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+  background-color: #333;
+  color: #fff;
+}
+
+.footer div {
+  flex-basis: 20%;
 }
